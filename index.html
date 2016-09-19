@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            
+            html,
+            body {
+                overflow: hidden;
+                background-image: url("images/main-background-3.jpg");
+                background-size: cover;
+                margin: 0;
+                font-family: "Berlin Sans FB", Times, serif;
+            }
+            
+            #top-bar {
+                height: auto;
+                width: 100%;
+                /*background-color: #000;*/
+                /*position: absolute;*/
+                /*top: 0;*/
+                /*left: 0;*/
+                text-align: center;
+                color: #fff;
+                padding: 20px;
+                display: inline-block;
+                vertical-align: top;
+                /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+            }
+            
+            #iframe-div {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                vertical-align: top;
+            }
+            
+            #iframe {
+                height: 100%;
+                width: 100%;
+                border: none;
+            }
+        </style>
+        <link type="text/css" rel="stylesheet" href="stylesheet/stylesheet.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript">
+            function loadIframe(url) {
+                $("#iframe").attr("src", url);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="title">Welcome to my page!</div>
+        <div id="top-bar">
+            <div>                
+                <div class="navigation">
+                    <a href="javascript:loadIframe('pages/main-content.html');">Home</a>
+                    <a href="javascript:loadIframe('pages/about.html');">About Me</a>
+                    <a href="javascript:loadIframe('pages/education.html');">Education</a>
+                    <a href="javascript:loadIframe('pages/experience.html');">Work Experience</a>
+                    <a href="javascript:loadIframe('pages/projects.html');">Projects</a>
+                </div>
+            </div>
+            <div id="iframe-div">
+                <iframe id="iframe" src="pages/main-content.html"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
