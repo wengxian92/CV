@@ -1,0 +1,85 @@
+h2 {
+    font-size: 20px;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    color: #fff;
+    text-align: left !important;
+    font-family: "Berlin Sans FB", Times, serif;
+}
+
+.navigation a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile-description a:focus {
+    border-bottom: 5px solid #e0e0e0;
+}
+
+.side-list ul {
+    padding-left: 0 !important;
+}
+
+/*.profile-image-wrapper {
+    border-radius: 200px;
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+}*/
+
+.profile-image {
+    background-image: url("../images/profile-image.jpg");
+    width: 200px;
+    height: 300px;
+    border-radius: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-body {
+/*    position: absolute;
+    top: 0;
+    left: 222px;*/
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 25%;    
+    font-family: "Baskerville Old Face", Times, serif;
+}
+
+.main-body-wrapper {
+    width: auto;
+}
+
+.content {    
+    margin-top: 50px;
+}
+
+.education ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.side-div {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+}
+
+.side-list ul {
+    list-style: none;
+}
